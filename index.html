@@ -69,7 +69,7 @@
 
   /* Avatar placeholder */
   .avatar{
-    width:120px;height:120px;border-radius:50%;
+    width:160px;height:160px;border-radius:50%;
     margin:0 auto 1.5rem;
     background:var(--accent-light);
     display:flex;align-items:center;justify-content:center;
@@ -155,7 +155,7 @@
 
   /* ── ABOUT / FUN ── */
   .about-section{background:var(--accent-light)}
-  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+  .about-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
   @media(max-width:640px){.about-grid{grid-template-columns:1fr}}
 
   .about-card{
@@ -209,7 +209,7 @@
   }
 
   /* ── SKILLS ── */
-  .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+  .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem}
   .skill-group h3{
     font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
     color:var(--accent);margin-bottom:.7rem;
@@ -269,6 +269,7 @@
     section{padding:3.5rem 1.2rem}
     .project-card{padding:1.4rem}
     .about-card{padding:1.3rem}
+    .skills-grid{grid-template-columns:1fr}
     .contact-wrap{margin:0 -1.2rem;padding:3.5rem 1.2rem}
     .hero{padding:6rem 1.2rem 3rem}
   }
@@ -333,7 +334,7 @@
       <div class="project-card reveal">
         <div class="project-header">
           <span class="project-name">Solar Pro 3 (100B)</span>
-          <span class="project-tag">SFT & DPO</span>
+          <span class="project-tag">SFT & DPO Training</span>
           <span class="project-tag">2026</span>
         </div>
         <p class="project-desc">Executed main SFT training — audited and restructured the data recipe, experimented with data mixtures and filtering strategies, managed checkpoint selection and training monitoring. Also contributed to DPO training.</p>
@@ -345,7 +346,7 @@
       <div class="project-card reveal">
         <div class="project-header">
           <span class="project-name">Solar Open1 / Sovereign AI 1 (100B)</span>
-          <span class="project-tag">Preference Training</span>
+          <span class="project-tag">DPO & Data Pipeline</span>
           <span class="project-tag">2025</span>
         </div>
         <p class="project-desc">Built and owned the synthetic pairwise-data pipeline for DPO/preference post-training. Designed the Korean history/culture data pipeline using diverse Korean-language sources with self-critique QA generation and hallucination filtering.</p>
@@ -357,7 +358,7 @@
       <div class="project-card reveal">
         <div class="project-header">
           <span class="project-name">Chosun Ilbo Proofreading Pipeline</span>
-          <span class="project-tag">Production LLM</span>
+          <span class="project-tag">Fine-tuning</span>
           <span class="project-tag">2025</span>
         </div>
         <p class="project-desc">Improved error-detection recall for a major Korean newspaper through failure analysis, targeted data generation, SFT/DPO fine-tuning, and rule-based post-processing. System was adopted into production, automating the editorial workflow.</p>
@@ -369,25 +370,12 @@
       <div class="project-card reveal">
         <div class="project-header">
           <span class="project-name">Solar-Embedding-1-Large</span>
-          <span class="project-tag">Embedding & Retrieval</span>
+          <span class="project-tag">Embedding</span>
           <span class="project-tag">2024</span>
         </div>
         <p class="project-desc">Led model-side development with a 3-person team. Shipped the first release in ~5 weeks, then iterated to 9th on MTEB-Retrieval, outperforming OpenAI and Cohere baselines across English, Korean, and Japanese.</p>
         <div class="project-metrics">
           <span class="metric">#9 MTEB-Retrieval</span>
-        </div>
-      </div>
-
-      <div class="project-card reveal">
-        <div class="project-header">
-          <span class="project-name">IYUNO Subtitle Translation PoC</span>
-          <span class="project-tag">LLM Fine-tuning</span>
-          <span class="project-tag">2024</span>
-        </div>
-        <p class="project-desc">Led model-side development for media-specific subtitle translation, achieving a 76% win rate over the client's specialized model and 73% over GPT-4o in human evaluation.</p>
-        <div class="project-metrics">
-          <span class="metric">76% vs Specialized</span>
-          <span class="metric">73% vs GPT-4o</span>
         </div>
       </div>
 
